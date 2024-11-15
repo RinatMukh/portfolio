@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CalendarApp.Aspire\CalendarApp.Aspire.ServiceDefaults\ServiceDefaults.csproj" />
+    <ProjectReference Include="..\..\ServiceDefaults\ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Customer.Application\Customer.Application.csproj" />
     <ProjectReference Include="..\Customer.Infrastructure\Customer.Infrastructure.csproj" />
   </ItemGroup>
 
