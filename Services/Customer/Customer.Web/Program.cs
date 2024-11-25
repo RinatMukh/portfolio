@@ -1,10 +1,11 @@
 using Customer.Domain.Orders.Contracts;
 using Customer.Infrastructure;
 using Customer.Infrastructure.Orders.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddNpgsqlDbContext<CustomerContext>(connectionName: "postgres");
+builder.AddNpgsqlDbContext<CustomerContext>(connectionName: "postgre");
 
 builder.AddServiceDefaults();
 builder.Services.AddHttpContextAccessor();
